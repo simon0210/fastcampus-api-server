@@ -10,5 +10,3 @@ mkdir ./channel-artifacts
 
 #channel configuration transaction: 프로필에 지정된 이름은 configtx.yaml의 "ChannelProfile" 이다.
 ./bin/configtxgen -profile OneOrgChannel -outputCreateChannelTx ./channel-artifacts/channel.tx -channelID channel1
-
-
