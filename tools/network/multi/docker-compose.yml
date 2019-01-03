@@ -1,8 +1,3 @@
-#
-# Copyright KT Corp All Rights Reserved
-#
-# SPDX-License-Identifier: Apache-2.0
-#
 version: '3'
 
 networks:
