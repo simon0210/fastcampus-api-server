@@ -150,8 +150,8 @@ dockerInstall() {
   fi
 }
 
-DOCKER=true
-SAMPLES=true
+DOCKER=false
+SAMPLES=false
 BINARIES=true
 
 # Parse commandline args pull out
