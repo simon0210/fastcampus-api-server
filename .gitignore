@@ -2,7 +2,3 @@ node_modules
 dist
 .DS_Store
 .idea
-tools/network/test/channel-artifacts
-tools/network/test/crypto-config
-tools/network/test/bin
-tools/network/test/config
