@@ -182,7 +182,7 @@ services:
       - ./channel-artifacts/:/opt/gopath/src/github.com/hyperledger/fabric/peer/channel-artifacts
       - ./crypto-config:/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/
       - ./cli:/opt/gopath/src/github.com/hyperledger/fabric/peer/cli
-      - ../chaincodes:/opt/gopath/src/github.com/hyperledger/fabric/examples/chaincode/go
+      - ../../chaincodes:/opt/gopath/src/github.com/hyperledger/fabric/examples/chaincode/go
       - ./:/opt/gopath/src/github.com/hyperledger/fabric/peer
     depends_on:
       - orderer.fastcampus.com
@@ -214,7 +214,7 @@ services:
       - ./channel-artifacts/:/opt/gopath/src/github.com/hyperledger/fabric/peer/channel-artifacts
       - ./crypto-config:/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/
       - ./cli:/opt/gopath/src/github.com/hyperledger/fabric/peer/cli
-      - ../chaincodes:/opt/gopath/src/github.com/hyperledger/fabric/examples/chaincode/go
+      - ../../chaincodes:/opt/gopath/src/github.com/hyperledger/fabric/examples/chaincode/go
       - ./:/opt/gopath/src/github.com/hyperledger/fabric/peer
     depends_on:
       - orderer.fastcampus.com
