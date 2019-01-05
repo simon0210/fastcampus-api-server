@@ -1,0 +1,57 @@
+{
+  "channelName": "mychannel",
+  "orderer": {
+    "orderer1": {
+      "mspid": "OrdererMSP",
+      "url": "grpcs://localhost:7050",
+      "server-hostname": "orderer.fastcampus.com",
+      "tls_cacerts": "tlsCerts/orderer/tlsca.fastcampus.com-cert.pem"
+    }
+  },
+  "orgs": {
+    "org1": {
+      "name": "peerOrg1",
+      "mspid": "Org1MSP",
+      "ca": {
+        "url": "https://localhost:7054",
+        "name": "ca.org1.fastcampus.com"
+      },
+      "peers": {
+        "peer1": {
+          "requests": "grpcs://localhost:7051",
+          "events": "grpcs://localhost:7053",
+          "server-hostname": "peer0.org1.fastcampus.com",
+          "tls_cacerts": "tlsCerts/org1.fastcampus.com/tlsca.org1.fastcampus.com-cert.pem"
+        },
+        "peer2": {
+          "requests": "grpcs://localhost:7056",
+          "events": "grpcs://localhost:7058",
+          "server-hostname": "peer1.org1.fastcampus.com",
+          "tls_cacerts": "tlsCerts/org1.fastcampus.com/tlsca.org1.fastcampus.com-cert.pem"
+        }
+      }
+    },
+    "org2": {
+      "name": "peerOrg2",
+      "mspid": "Org2MSP",
+      "ca": {
+        "url": "https://localhost:8054",
+        "name": "ca.org2.fastcampus.com"
+      },
+      "peers": {
+        "peer1": {
+          "requests": "grpcs://localhost:8051",
+          "events": "grpcs://localhost:8053",
+          "server-hostname": "peer0.org2.fastcampus.com",
+          "tls_cacerts": "tlsCerts/org2.fastcampus.com/tlsca.org2.fastcampus.com-cert.pem"
+        },
+        "peer2": {
+          "requests": "grpcs://localhost:8056",
+          "events": "grpcs://localhost:8058",
+          "server-hostname": "peer1.org2.fastcampus.com",
+          "tls_cacerts": "tlsCerts/org2.fastcampus.com/tlsca.org2.fastcampus.com-cert.pem"
+        }
+      }
+    }
+  }
+}
